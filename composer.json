@@ -1,0 +1,25 @@
+{
+  "name": "maxgruson/carbon-field-leaflet-map",
+  "description": "Carbon Fields extension that adds a Leaflet Map field type.",
+  "keywords": [
+    "wordpress",
+    "carbon-field",
+    "carbon-fields-leaflet-map"
+  ],
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "Max Gruson",
+      "email": "max@gruson.studio"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "files": [
+      "field.php"
+    ],
+    "psr-4": {
+      "Carbon_Field_Leaflet_Map\\": "core/"
+    }
+  }
+}
