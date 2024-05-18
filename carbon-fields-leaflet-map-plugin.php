@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Carbon Field Leaflet Map
  * Description: Leaflet Map extension for Carbon Fields.
- * Version: 1.0.3
+ * Version: 1.0.4
  * Author: Max Gruson
  * Author URI: https://max.gruson.studio
  * License: GPL2

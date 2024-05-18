@@ -158,6 +158,7 @@ class MapField extends Component {
       this.map.whenReady( () => { setTimeout( () => {
         this.marker.openPopup();
         this.map.setView( this.marker.getLatLng() ).panBy([0,-50] );
+        this.map.invalidateSize();
       }, 500 ) } );
     }
     
@@ -184,6 +185,7 @@ class MapField extends Component {
         this.marker.closePopup();
         this.marker.openPopup();
         this.map.setView( this.marker.getLatLng() ).panBy([0,-50] );
+        this.map.invalidateSize();
       } )
     }
     // Get results from Leaflet GeoSearch
