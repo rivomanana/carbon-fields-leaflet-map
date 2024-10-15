@@ -197,7 +197,7 @@ class Leaflet_Map_Field extends Field {
     $root_uri = \Carbon_Fields\Carbon_Fields::directory_to_url( \Carbon_Field_Leaflet_Map\DIR );
 
     // Enqueue JS
-    wp_enqueue_script( 'carbon-fields-leaflet-map', $root_uri . '/assets/build/bundle.js', filemtime( WP_PLUGIN_DIR . '/carbon-fields-leaflet-map/assets/build/bundle.js' ), true );
+    wp_enqueue_script( 'carbon-fields-leaflet-map', $root_uri . '/assets/build/bundle.js', ['carbon-fields-core'], false );
 
     // Enqueue CSS
     wp_enqueue_style( 'leaflet', 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css' );
